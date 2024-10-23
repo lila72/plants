@@ -14,7 +14,7 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             background-color: #f5f5f5;
-			background-image: url('pattern_plants80.jpg');
+			background-image: url('https://cartsplants.netlify.app/pattern_plants80.jpg');
             color: #000;
             line-height: 1.6;
             padding: 2rem;
@@ -59,7 +59,7 @@
 
         .main-content {
             padding: 2rem;
-			background-image: url('plant_bg.png');
+			background-image: url('https://cartsplants.netlify.app/plant_bg.png');
 			background-position: bottom right;
 			background-repeat: no-repeat;
 			background-size: contain;
@@ -71,6 +71,11 @@
             object-fit: cover;
             border-radius: 0.5rem;
             margin-bottom: 2rem;
+			cursor: pointer;
+        }
+		
+        .hidden {
+            display: none;
         }
 
         .section {
@@ -153,27 +158,41 @@
         <header class="header">
             <div class="header-content">
                 <div>
-                    <h1 class="title" contenteditable="true">Монстера</h1>
-                    <p class="subtitle" contenteditable="true">Monstera Deliciosa</p>
-                    <p class="description" contenteditable="true">Тропическое растение для дома</p>
+                    <h1 class="title" contenteditable="true">
+					<!-- /// -->
+					Монстера
+					<!-- /// -->
+					</h1>
+                    <p class="subtitle" contenteditable="true">
+					<!-- /// -->
+					Monstera Deliciosa
+					<!-- /// -->
+					</p>
+                    <p class="description" contenteditable="true">
+					<!-- /// -->
+					Тропическое растение для дома
+					<!-- /// -->
+					</p>
                 </div>
             </div>
         </header>
 
         <main class="main-content">
-            <img src="image.jpg" alt="Монстера" class="plant-image">
-
+            <img src="image.jpg" alt="Монстера" class="plant-image" id="plantImage">
+			<input type="file" id="fileInput" accept="image/*" class="hidden">
             <section class="section">
                 <h2 class="section-title">
                     <i data-lucide="leafy-green" class="icon"></i>
                     Описание
                 </h2>
                 <p contenteditable="true">
+				<!-- /// -->
                     Монстера — это величественное тропическое растение родом из Центральной Америки, 
                     известное своими большими, резными листьями с характерными отверстиями. 
                     В естественной среде может вырастать до 20 метров, но в домашних условиях 
                     обычно не превышает 2-3 метров. Его научное название "Deliciosa" происходит 
                     от съедобных плодов, напоминающих по вкусу смесь ананаса и банана.
+				<!-- /// -->
                 </p>
             </section>
 
@@ -188,7 +207,11 @@
                             <i data-lucide="sun" class="icon"></i>
                             <h3 class="care-item-title">Освещение</h3>
                         </div>
-                        <p contenteditable="true">Яркий, рассеянный свет. Избегайте прямых солнечных лучей.</p>
+                        <p contenteditable="true">
+						<!-- /// -->
+						Яркий, рассеянный свет. Избегайте прямых солнечных лучей.
+						<!-- /// -->
+						</p>
                     </div>
 
                     <div class="care-item">
@@ -196,7 +219,11 @@
                             <i data-lucide="thermometer" class="icon"></i>
                             <h3 class="care-item-title">Температура</h3>
                         </div>
-                        <p contenteditable="true">18-27°C. Не переносит температуры ниже 10°C.</p>
+                        <p contenteditable="true">
+						<!-- /// -->
+						18-27°C. Не переносит температуры ниже 10°C.
+						<!-- /// -->
+						</p>
                     </div>
 
                     <div class="care-item">
@@ -204,7 +231,11 @@
                             <i data-lucide="droplet" class="icon"></i>
                             <h3 class="care-item-title">Полив</h3>
                         </div>
-                        <p contenteditable="true">Умеренный. Поливайте когда верхний слой почвы просохнет на 2-3 см.</p>
+                        <p contenteditable="true">
+						<!-- /// -->
+						Умеренный. Поливайте когда верхний слой почвы просохнет на 2-3 см.
+						<!-- /// -->
+						</p>
                     </div>
 
                     <div class="care-item">
@@ -212,7 +243,11 @@
                             <i data-lucide="cloud" class="icon"></i>
                             <h3 class="care-item-title">Влажность</h3>
                         </div>
-                        <p contenteditable="true">Высокая. Регулярное опрыскивание листьев.</p>
+                        <p contenteditable="true">
+						<!-- /// -->
+						Высокая. Регулярное опрыскивание листьев.
+						<!-- /// -->
+						</p>
                     </div>
 
                     <div class="care-item">
@@ -220,7 +255,11 @@
                             <i data-lucide="shovel" class="icon"></i>
                             <h3 class="care-item-title">Почва</h3>
                         </div>
-                        <p contenteditable="true">Легкая, хорошо дренируемая с добавлением торфа и перлита.</p>
+                        <p contenteditable="true">
+						<!-- /// -->
+						Легкая, хорошо дренируемая с добавлением торфа и перлита.
+						<!-- /// -->
+						</p>
                     </div>
 
                     <div class="care-item">
@@ -228,7 +267,11 @@
                             <i data-lucide="arrow-up-circle" class="icon"></i>
                             <h3 class="care-item-title">Пересадка</h3>
                         </div>
-                        <p contenteditable="true">Раз в 1-2 года весной, когда корни заполнят горшок.</p>
+                        <p contenteditable="true">
+						<!-- /// -->
+						Раз в 1-2 года весной, когда корни заполнят горшок.
+						<!-- /// -->
+						</p>
                     </div>
                 </div>
             </section>
@@ -245,8 +288,10 @@
                             <h3 class="care-item-title">Обрезка</h3>
                         </div>
                         <p contenteditable="true">
+						<!-- /// -->
                             Обрезайте старые и пожелтевшие листья. Формируйте растение, 
                             удаляя слишком длинные побеги весной.
+						<!-- /// -->
                         </p>
                     </div>
 
@@ -256,8 +301,10 @@
                             <h3 class="care-item-title">Подкормка</h3>
                         </div>
                         <p contenteditable="true">
+						<!-- /// -->
                             Весной и летом каждые 2 недели. Зимой раз в месяц. 
                             Используйте комплексные удобрения.
+						<!-- /// -->
                         </p>
                     </div>
                 </div>
@@ -266,7 +313,7 @@
             <section class="section">
                 <h2 class="section-title">
                     <i data-lucide="alert-triangle" class="icon"></i>
-                    Возможные проблемы
+                    Возможные сложности в уходи
                 </h2>
                 <div class="care-item">
                     <div class="care-item-header">
@@ -274,11 +321,13 @@
                         <h3 class="care-item-title">Распространенные проблемы</h3>
                     </div>
                     <ul class="problems-list" contenteditable="true">
+					<!-- /// -->
                         <li>Пожелтение листьев — часто признак переполива</li>
                         <li>Отсутствие отверстий в новых листьях — недостаточное освещение</li>
                         <li>Коричневые кончики листьев — низкая влажность</li>
                         <li>Вытянутые стебли — недостаток света</li>
                         <li>Появление пятен на листьях — солнечные ожоги</li>
+					<!-- /// -->	
                     </ul>
                 </div>
             </section>
@@ -289,6 +338,37 @@
 <script src="https://unpkg.com/lucide@latest"></script>
     <script>
         lucide.createIcons();
+    </script>
+	<script>
+        // Получаем элементы img и input
+        const plantImage = document.getElementById('plantImage');
+        const fileInput = document.getElementById('fileInput');
+
+        // Обработчик клика по картинке
+        plantImage.addEventListener('click', function() {
+            // При клике на изображение вызываем диалог выбора файла
+            fileInput.click();
+        });
+
+        // Обработчик выбора файла
+        fileInput.addEventListener('change', function(event) {
+            const file = event.target.files[0]; // Получаем первый выбранный файл
+            if (file) {
+                const reader = new FileReader();
+
+                // Когда файл прочитан, заменяем src у изображения
+                reader.onload = function(e) {
+                    plantImage.src = e.target.result; // Устанавливаем новое изображение
+                };
+
+                reader.onerror = function() {
+                    alert('Ошибка при чтении файла.');
+                };
+
+                // Чтение файла как Data URL (для изображения)
+                reader.readAsDataURL(file);
+            }
+        });
     </script>
 </body>
 </html>
